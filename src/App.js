@@ -1,9 +1,14 @@
-import "./App.css";
+// import "./App.css";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
 
 function App() {
   return (
     <div>
-      <div>Hello World</div>
+      <Banner />
+      <Main />
+      <Footer />
     </div>
   );
 }
