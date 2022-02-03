@@ -1,11 +1,13 @@
+.banner {
+  width: 100%;
+}
+
 .blueBanner {
   background-color: #28628c;
-  width: auto;
 }
 
 .whiteBanner {
   background-color: white;
-  width: auto;
 }
 
 .logo {
@@ -13,9 +15,13 @@
   padding: 20px 150px;
 }
 
-/* @media (max-width: 480px) {
+@media (max-width: 850px) {
   .logo {
     height: 60px;
     justify-content: center;
   }
-} */
+  .banner {
+    display: flex;
+    width: 100%;
+  }
+}

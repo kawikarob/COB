@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div style={{ width: "100vw" }}>
       <Banner accepted={accepted} />
       <Main activeClicked={handleChange} />
       <Footer />

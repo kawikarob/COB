@@ -43,30 +43,43 @@
 }
 
 .body {
+  width: 100vw;
   height: 60vh;
+  position: relative;
+}
+
+.imageContainer {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+}
+
+.imageSize {
+  float: right;
+  height: 100%;
+  width: 60%;
+  object-fit: cover;
 }
 
 .container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
   padding-left: 150px;
   padding-top: 50px;
+  position: absolute;
   /* padding-bottom: 100px; */
 }
 
 .row {
   width: 80%;
   display: flex;
-  /* justify-content: start; */
+  margin-bottom: 10px;
 }
 
-/* .rowOne {
-  margin-top: 10px;
-  margin-bottom: 10px;
-} */
-
-.column {
-  display: flex;
-  /* justify-content: center;
-  align-self: center; */
+.buttonContainer {
+  margin-top: 50px;
 }
 
 .orangeButton {
@@ -74,13 +87,13 @@
   color: whitesmoke;
   font-weight: bold;
   border-radius: 5px;
-  padding: 10px 35px;
-  margin-right: 20px;
+  width: 120px;
+  height: 30px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
   outline: none;
   cursor: pointer;
-  /* margin-top: 30px; */
+  margin-right: 25px;
 }
 
 .orangeButton:hover {
@@ -93,8 +106,8 @@
   color: black;
   font-weight: bold;
   border-radius: 5px;
-  padding: 10px 30px;
-  margin-right: 20px;
+  width: 120px;
+  height: 30px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
   outline: none;
@@ -104,6 +117,12 @@
 .grayButton:hover {
   background-color: #e2e0e0;
   color: black;
+}
+
+.feeContainer {
+  width: 120px;
+  display: flex;
+  justify-content: center;
 }
 
 .boxOne {
@@ -116,7 +135,10 @@
   border-right: solid #28628c 1px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 850px) {
+  .container {
+    padding: 20px;
+  }
 }
 
 /* 

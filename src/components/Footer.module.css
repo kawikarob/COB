@@ -1,8 +1,8 @@
 .gray {
-  padding-left: 150px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
   background-color: #1e1e1e;
   color: whitesmoke;
   width: 100%;
+  padding: 10px;
 }

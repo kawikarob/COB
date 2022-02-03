@@ -5,20 +5,16 @@ import blackBlueLogo from "../images/logo.svg";
 
 const Banner = ({ accepted }) => {
   return (
-    <div>
-      {accepted ? (
-        <div className={bannerStyles.blueBanner}>
-          <img src={whiteLogo} alt="white Logo" className={bannerStyles.logo} />
-        </div>
-      ) : (
-        <div className={bannerStyles.whiteBanner}>
-          <img
-            src={blackBlueLogo}
-            alt="Black and blue Logo"
-            className={bannerStyles.logo}
-          />
-        </div>
-      )}
+    <div
+      className={`bannerStyles.banner ${
+        accepted ? bannerStyles.blueBanner : bannerStyles.whiteBanner
+      }`}
+    >
+      <img
+        src={accepted ? whiteLogo : blackBlueLogo}
+        alt="logo"
+        className={bannerStyles.logo}
+      />
     </div>
   );
 };
