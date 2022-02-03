@@ -10,11 +10,13 @@ const Banner = ({ accepted }) => {
         accepted ? bannerStyles.blueBanner : bannerStyles.whiteBanner
       }`}
     >
-      <img
-        src={accepted ? whiteLogo : blackBlueLogo}
-        alt="logo"
-        className={bannerStyles.logo}
-      />
+      <div className={bannerStyles.logoContainer}>
+        <img
+          src={accepted ? whiteLogo : blackBlueLogo}
+          alt="logo"
+          className={bannerStyles.logo}
+        />
+      </div>
     </div>
   );
 };
