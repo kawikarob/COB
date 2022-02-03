@@ -1,14 +1,21 @@
 .blueBanner {
   background-color: #28628c;
-  padding: 30px 150px;
-}
-
-.logoWhite {
-  height: 60px;
-  pointer-events: none;
+  width: auto;
 }
 
 .whiteBanner {
   background-color: white;
-  padding: 30px 150px;
+  width: auto;
 }
+
+.logo {
+  height: 50px;
+  padding: 20px 150px;
+}
+
+/* @media (max-width: 480px) {
+  .logo {
+    height: 60px;
+    justify-content: center;
+  }
+} */

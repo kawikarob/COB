@@ -1,15 +1,72 @@
-p {
+* {
+  padding: 0;
   margin: 0;
 }
 
-h1 {
-  margin: 0;
+.xLargeText {
+  color: #28628c;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.largeText {
+  font-size: 30px;
+  color: #28628c;
+  font-weight: 700;
+}
+
+.mediumText {
+  font-size: 20px;
+  color: #28628c;
+  font-weight: 700;
+}
+
+.smallBoldText {
+  font-size: 16px;
+  color: #28628c;
+  font-weight: 700;
+}
+
+.smallText {
+  font-size: 16px;
+  color: #28628c;
+}
+
+.xSmallText {
+  font-size: 12px;
+  color: #28628c;
+}
+
+.grayText {
+  font-size: 16px;
+  color: gray;
+}
+
+.body {
+  height: 60vh;
 }
 
 .container {
   padding-left: 150px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-bottom: 100px; */
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  /* justify-content: start; */
+}
+
+/* .rowOne {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+.column {
+  display: flex;
+  /* justify-content: center;
+  align-self: center; */
 }
 
 .orangeButton {
@@ -17,12 +74,13 @@ h1 {
   color: whitesmoke;
   font-weight: bold;
   border-radius: 5px;
-  padding: 10px 30px;
+  padding: 10px 35px;
   margin-right: 20px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
   outline: none;
   cursor: pointer;
+  /* margin-top: 30px; */
 }
 
 .orangeButton:hover {
@@ -48,39 +106,23 @@ h1 {
   color: black;
 }
 
-.largeBlue {
-  color: #28628c;
-  font-size: 36px;
-  font-weight: 700;
+.boxOne {
+  margin-right: 16px;
 }
 
-.xLargeBlue {
-  color: #28628c;
-  font-size: 34px;
-  font-weight: 700;
-}
-
-.mediumBlue {
-  color: #28628c;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.smallBoldBlue {
-  color: #28628c;
-  font-weight: 700;
-}
-
-.smallBlue {
-  color: #28628c;
-  font-weight: 400;
-}
-
-.flexParentElement {
-  text-align: left;
-}
-
-.flexChildElement {
-  display: inline-block;
+.boxTwo {
   margin-right: 20px;
+  padding-right: 20px;
+  border-right: solid #28628c 1px;
 }
+
+@media (max-width: 500px) {
+}
+
+/* 
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 0;
+} */

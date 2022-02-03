@@ -8,18 +8,14 @@ const Banner = ({ accepted }) => {
     <div>
       {accepted ? (
         <div className={bannerStyles.blueBanner}>
-          <img
-            src={whiteLogo}
-            alt="white Logo"
-            className={bannerStyles.logoWhite}
-          />
+          <img src={whiteLogo} alt="white Logo" className={bannerStyles.logo} />
         </div>
       ) : (
         <div className={bannerStyles.whiteBanner}>
           <img
             src={blackBlueLogo}
             alt="Black and blue Logo"
-            className={bannerStyles.logoWhite}
+            className={bannerStyles.logo}
           />
         </div>
       )}
